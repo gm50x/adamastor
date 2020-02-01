@@ -1,0 +1,33 @@
+{
+  "name": "adamastor",
+  "version": "1.0.0",
+  "description": "Create a simple API, configuring branch protection rules and setting CI/CD.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha test --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gm50x/adamastor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gm50x/adamastor/issues"
+  },
+  "homepage": "https://github.com/gm50x/adamastor#readme",
+  "devDependencies": {
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
