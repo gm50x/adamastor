@@ -22,5 +22,9 @@ describe('API Class Unit Test Suit', () => {
     it('Should have a start method', () => {
         assert.ok(Object.getOwnPropertyNames(API.prototype).includes('start'))
     })
+
+    it('Should have a stop method', () => {
+        assert.ok(Object.getOwnPropertyNames(API.prototype).includes('stop'))
+    })
 })
 

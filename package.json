@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "mocha test --recursive"
+    "test": "mocha test --recursive",
+    "coverage": "nyc npm test"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
   "homepage": "https://github.com/gm50x/adamastor#readme",
   "devDependencies": {
     "mocha": "^7.0.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "nyc": "^15.0.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
