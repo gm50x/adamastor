@@ -10,7 +10,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "mocha test --recursive",
-    "coverage": "nyc npm test"
+    "coverage": "nyc --reporter=lcov npm test"
   },
   "repository": {
     "type": "git",
