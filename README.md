@@ -1,5 +1,6 @@
 # adamastor
 ## Simple POC on CI/CD
+![Node.js CI](https://github.com/gm50x/adamastor/workflows/Node.js%20CI/badge.svg?branch=master)
 
 # Objective
 Create a simple API, configuring branch protection rules and setting CI/CD.
