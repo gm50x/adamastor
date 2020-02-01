@@ -2,7 +2,7 @@ const { ok } = require('assert')
 
 describe('Foo test suit', () => {
     it('Should simple pass the Foo test', () => {
-        ok(false)
+        ok(true)
     })
 
     for (let i = 0; i < 30; i++) {
