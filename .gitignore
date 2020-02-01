@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# nyc test coverage
+.nyc_output

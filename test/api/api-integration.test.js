@@ -3,9 +3,10 @@ const assert = require('assert')
 const API = require('../../src/infrastructure/web/api')
 const http = require('http')
 
+let api;
 describe('API Integration Test Suit', () => {
     before(() => {
-        const api = new API(true)
+        api = new API(true)
         api.configure()
         api.start()
     })
@@ -30,6 +31,6 @@ describe('API Integration Test Suit', () => {
         })
     })
     after(() => {
-        process.exit()
+        api.stop()
     })
 })

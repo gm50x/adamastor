@@ -4,6 +4,7 @@ class API {
     constructor(silentMode) {
         this.silentMode = silentMode || false
         this.app = express()
+        this.server = {}
     }
 
     configure() {
@@ -19,11 +20,16 @@ class API {
     }
 
     start() {
-        this.app.listen(process.env.PORT || 3000, () => {
+        this.server = this.app.listen(process.env.PORT || 3000, () => {
             if (!this.silentMode) {
                 console.log(`The application is listening on localhost:${process.env.PORT || 3000}`)
             }
         })
+        return this.server
+    }
+
+    stop() {
+        this.server.close()
     }
 }
 

@@ -1,6 +1,15 @@
 const API = require('./src/infrastructure/web/api')
 
-const api = new API()
+function app (silent = false) {
+    const api = new API(silent)
 
-api.configure()
-api.start()
+    api.configure()
+    return api.start()
+
+}
+
+if (require.main === module) {
+    app()
+}
+
+module.exports = app
