@@ -1,7 +1,8 @@
 const express = require('express')
 
 class API {
-    constructor() {
+    constructor(silentMode) {
+        this.silentMode = silentMode || false
         this.app = express()
     }
 
@@ -19,7 +20,9 @@ class API {
 
     start() {
         this.app.listen(process.env.PORT || 3000, () => {
-            console.log(`The application is listening on localhost:${process.env.PORT || 3000}`)
+            if (!this.silentMode) {
+                console.log(`The application is listening on localhost:${process.env.PORT || 3000}`)
+            }
         })
     }
 }
