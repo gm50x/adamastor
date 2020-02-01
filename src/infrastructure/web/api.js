@@ -12,6 +12,9 @@ class API {
         this.app.get('/api/v2', (req, res) => {
             res.status(200).json({ message: 'Welcome to the API V2' })
         })
+        this.app.get('/api/v2/foo', (req, res) => {
+            res.status(200).json({ message: 'Welcome to the api/v2/foo' })
+        })
     }
 
     start() {
