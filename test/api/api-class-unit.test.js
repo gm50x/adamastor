@@ -2,7 +2,7 @@ const assert = require('assert')
 
 const API = require('../../src/infrastructure/web/api')
 
-describe.only('API Class Unit Test Suit', () => {
+describe('API Class Unit Test Suit', () => {
     it('Should be defined', () => {
         assert.ok(API)
     })
