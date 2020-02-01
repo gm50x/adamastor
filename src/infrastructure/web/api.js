@@ -12,8 +12,8 @@ class API {
     }
 
     start() {
-        this.app.listen(3000, () => {
-            console.log(`The application is listening on localhost:3000`)
+        this.app.listen(process.env.PORT || 3000, () => {
+            console.log(`The application is listening on localhost:${process.env.PORT || 3000}`)
         })
     }
 }
