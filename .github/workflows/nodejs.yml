@@ -2,9 +2,9 @@ name: Node.js CI
 
 on:
   push: 
-    branches: [development, master]
+    branches: [master]
   pull_request:
-    branches: [development, master]
+    branches: [master]
     
 jobs:
   test:
@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         node_version: [12.x]
-        os: [ubuntu-latest]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
     - uses: actions/checkout@v2
