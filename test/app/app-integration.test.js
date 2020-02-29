@@ -7,7 +7,6 @@ describe('Application Wide Integration Test Suit', () => {
     it('Should run without throwing', () => {
         server = app(silent = true)
     })
-
     after(() => {
         server.close()
     })
