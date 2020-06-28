@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/gm50x/adamastor#readme",
   "devDependencies": {
-    "mocha": "^7.0.1",
+    "mocha": "^8.0.1",
     "nodemon": "^2.0.2"
   },
   "dependencies": {
